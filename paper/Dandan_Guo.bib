@@ -1,0 +1,113 @@
+@article{guo2022matching,
+  title={Matching Visual Features to Hierarchical Semantic Topics for Image Paragraph Captioning},
+  author={Guo, Dandan and Lu, Ruiying and Chen, Bo and Zeng, Zequn and Zhou, Mingyuan},
+  journal={International Journal of Computer Vision},
+  pages={1--18},
+  year={2022},
+    url={https://link.springer.com/article/10.1007/s11263-022-01624-6},
+  pdf={https://arxiv.org/pdf/2105.04143.pdf},
+  url_arxiv={https://arxiv.org/abs/2105.04143},
+  Note = {(the first two authors contributed equally)},
+      abstract={Observing a set of images and their corresponding paragraph-captions, a challenging task is to learn how to produce a semantically coherent paragraph to describe the visual content of an image. Inspired by recent successes in integrating semantic topics into this task, this paper develops a plug-and-play hierarchical-topic-guided image paragraph generation framework, which couples a visual extractor with a deep topic model to guide the learning of a language model. To capture the correlations between the image and text at multiple levels of abstraction and learn the semantic topics from images, we design a variational inference network to build the mapping from image features to textual captions. To guide the paragraph generation, the learned hierarchical topics and visual features are integrated into the language model, including Long Short-Term Memory and Transformer, and jointly optimized. Experiments on public datasets demonstrate that the proposed models, which are competitive with many state-of-the-art approaches in terms of standard evaluation metrics, can be used to both distill interpretable multi-layer semantic topics and generate diverse and coherent captions.},
+  publisher={Springer}
+}
+
+@inproceedings{
+wang2022representing,
+title={Representing Mixtures of Word Embeddings with Mixtures of Topic Embeddings},
+author={Dongsheng Wang and Dandan Guo and He Zhao and Huangjie Zheng and Korawat Tanwisuth and Bo Chen and Mingyuan Zhou},
+booktitle={ICLR 2022: International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=IYMuTbGzjFU},
+pdf={https://openreview.net/pdf?id=IYMuTbGzjFU},
+ Note = {(the first two authors contributed equally)},
+url_code={https://github.com/wds2014/WeTe}
+}
+
+@inproceedings{
+guo2022learning,
+title={Learning Prototype-oriented Set Representations for Meta-Learning},
+author={Dandan Guo and Long Tian and Minghe Zhang and Mingyuan Zhou and Hongyuan Zha},
+booktitle={ICLR 2022: International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=WH6u2SvlLp4},
+pdf={https://openreview.net/pdf?id=WH6u2SvlLp4},
+url_code={https://openreview.net/attachment?id=WH6u2SvlLp4&name=supplementary_material},
+abstract={Learning from set-structured data is a fundamental problem that has recently attracted increasing attention, where a series of summary networks are introduced to deal with the set input. In fact, many meta-learning problems can be treated as set-input tasks. Most existing summary networks aim to design different architectures for the input set in order to enforce permutation invariance. However, scant attention has been paid to the common cases where different sets in a meta distribution are closely related and share certain statistical properties. Viewing each set as a distribution over a set of global prototypes, this paper provides a novel prototype-oriented optimal transport (POT) framework to improve existing summary networks. To learn the distribution over the global prototypes, we minimize its regularized optimal transport distance to the set empirical distribution over data points, providing a natural unsupervised way to improve the summary network. Since our plug-and-play framework can be applied to many meta learning problems, we further instantiate it to the cases of few-shot classification and implicit meta generative modeling. Extensive experiments demonstrate that our framework significantly improves the existing summary networks on learning more powerful summary statistics from sets and can be successfully integrated into metric-based few-shot classification and generative modeling applications, providing a promising tool for addressing set-input and meta-learning problems.}
+}
+
+@article{guo2021SAR,
+  author={Guo, Dandan and Chen, Bo and Zheng, Meixi and Liu, Hongwei},
+  journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+  title={SAR Automatic Target Recognition Based on Supervised Deep Variational Autoencoding Model}, 
+  year={2021},
+  volume={57},
+  number={6},
+  pages={4313-4328},
+  doi={10.1109/TAES.2021.3096868}}
+
+@article{guo2020variational,
+      title={Variational Temporal Deep Generative Model for Radar {HRRP} Target Recognition}, 
+      author={Dandan Guo and Bo Chen and Wenchao Chen and Chaojie Wang and Hongwei Liu and Mingyuan Zhou},
+      year={2020},
+      journal={IEEE Transactions on Signal Processing},
+  volume={68},
+  pages={5795--5809},
+      url={https://arxiv.org/abs/2009.13011},
+    pdf={https://arxiv.org/pdf/2009.13011.pdf},
+    url_arxiv={https://arxiv.org/abs/2009.13011},
+    abstract={We develop a recurrent gamma belief network (rGBN) for radar automatic target recognition (RATR) based on high-resolution range profile (HRRP), which characterizes the temporal dependence across the range cells of HRRP. The proposed rGBN adopts a hierarchy of gamma distributions to build its temporal deep generative model. For scalable training and fast out-of-sample prediction, we propose the hybrid of a stochastic-gradient Markov chain Monte Carlo (MCMC) and a recurrent variational inference model to perform posterior inference. To utilize the label information to extract more discriminative latent representations, we further propose supervised rGBN to jointly model the HRRP samples and their corresponding labels. Experimental results on synthetic and measured HRRP data show that the proposed models are efficient in computation, have good classification accuracy and generalization ability, and provide highly interpretable multi-stochastic-layer latent structure.}
+}
+
+@inproceedings{guo2020recurrent,
+  title={Recurrent Hierarchical Topic-Guided RNN for Language Generation},
+  author={Guo, Dandan and Chen, Bo and Lu, Ruiying and Zhou, Mingyuan},
+  booktitle={ICML 2020: International Conference on Machine Learning},
+  year={2020},
+  url={http://proceedings.mlr.press/v119/guo20a.html},
+  pdf={https://arxiv.org/pdf/1912.10337.pdf},
+  url_arxiv={https://arxiv.org/abs/1912.10337},
+  url_code={https://github.com/Dan123dan/rGBN-RNN},
+  abstract={To simultaneously capture syntax and global semantics from a text corpus, we propose a new larger-context recurrent neural network (RNN) based language model, which extracts recurrent hierarchical semantic structure via a dynamic deep topic model to guide natural language generation. Moving beyond a conventional RNN-based language model that ignores long-range word dependencies and sentence order, the proposed model captures not only intra-sentence word dependencies, but also temporal transitions between sentences and inter-sentence topic dependencies. For inference, we develop a hybrid of stochastic-gradient Markov chain Monte Carlo and recurrent autoencoding variational Bayes. Experimental results on a variety of real-world text corpora demonstrate that the proposed model not only outperforms larger-context RNN-based language models, but also learns interpretable recurrent multilayer topics and generates diverse sentences and paragraphs that are syntactically correct and semantically coherent.}
+}
+
+@article{zhang2020deep,
+  title={Deep Autoencoding Topic Model with Scalable Hybrid {B}ayesian Inference},
+  author={Zhang, Hao and Chen, Bo and Cong, Yulai and Guo, Dandan and Liu, Hongwei and Zhou, Mingyuan},
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={43},
+  number={12},
+  pages={4306--4322},
+  year={2020},
+  url={https://ieeexplore.ieee.org/document/9121755},
+  pdf={Papers/DATM_PAMI2020.pdf},
+  url_arxiv={http://arxiv.org/abs/2006.08804},
+  abstract={To build a flexible and interpretable model for document analysis, we develop deep autoencoding topic model (DATM) that uses a hierarchy of gamma distributions to construct its multi-stochastic-layer generative network. In order to provide scalable posterior inference for the parameters of the generative network, we develop topic-layer-adaptive stochastic gradient Riemannian MCMC that jointly learns simplex-constrained global parameters across all layers and topics, with topic and layer specific learning rates. Given a posterior sample of the global parameters, in order to efficiently infer the local latent representations of a document under DATM across all stochastic layers, we propose a Weibull upward-downward variational encoder that deterministically propagates information upward via a deep neural network, followed by a Weibull distribution based stochastic downward generative model. To jointly model documents and their associated labels, we further propose supervised DATM that enhances the discriminative power of its latent representations. The efficacy and scalability of our models are demonstrated on both unsupervised and supervised learning tasks on big corpora.}
+}
+
+
+@inproceedings{guo2018deep,
+title = {Deep Poisson Gamma Dynamical Systems},
+author = {Guo, Dandan and Chen, Bo and Zhang, Hao and Zhou, Mingyuan},
+booktitle = {NeurIPS 2018: Advances in Neural Information Processing Systems},
+editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+pages = {8442--8452},
+year = {2018}, 
+url = {https://papers.nips.cc/paper/8064-deep-poisson-gamma-dynamical-systems.html},
+pdf={Papers/Guo_DPGDS_NIPS2018.pdf},
+url_arxiv={https://arxiv.org/abs/1810.11209},
+abstract={We develop deep Poisson-gamma dynamical systems (DPGDS) to model sequentially observed multivariate count data, improving previously proposed models by not only mining deep hierarchical latent structure from the data, but also capturing both first-order and long-range temporal dependencies. Using sophisticated but simple-to-implement data augmentation techniques, we derived closed-form Gibbs sampling update equations by first backward and upward propagating auxiliary latent counts, and then forward and downward sampling latent variables. Moreover, we develop stochastic gradient MCMC inference that is scalable to very long multivariate count time series. Experiments on both synthetic and a variety of real-world data demonstrate that the proposed model not only has excellent predictive performance, but also provides highly interpretable multilayer latent structure to represent hierarchical and temporal information propagation.}
+}
+
+@inproceedings{
+zhang2018whai,
+title={{WHAI}: {W}eibull Hybrid Autoencoding Inference for Deep Topic Modeling},
+author={Hao Zhang and Bo Chen and Dandan Guo and Mingyuan Zhou},
+booktitle={ICLR 2018: International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=S1cZsf-RW},
+pdf={Papers/WHAI_ICLR2018.pdf},
+url_arxiv={https://arxiv.org/abs/1803.01328},
+url_code={https://GitHub.com/BoChenGroup/WHAI},
+abstract={To train an inference network jointly with a deep generative topic model, making it both scalable to big corpora and fast in out-of-sample prediction, we develop Weibull hybrid autoencoding inference (WHAI) for deep latent Dirichlet allocation, which infers posterior samples via a hybrid of stochastic-gradient MCMC and autoencoding variational Bayes. The generative network of WHAI has a hierarchy of gamma distributions, while the inference network of WHAI is a Weibull upward-downward variational autoencoder, which integrates a deterministic-upward deep neural network, and a stochastic-downward deep generative model based on a hierarchy of Weibull distributions. The Weibull distribution can be used to well approximate a gamma distribution with an analytic Kullback-Leibler divergence, and has a simple reparameterization via the uniform noise, which help efficiently compute the gradients of the evidence lower bound with respect to the parameters of the inference network. The effectiveness and efficiency of WHAI are illustrated with experiments on big corpora.}
+}
